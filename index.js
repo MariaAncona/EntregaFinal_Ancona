@@ -1,64 +1,91 @@
+const categoriasCont = document.getElementById('categorias-contenedor');
+
+
+
 const categorias =[
     {
     id: 1,
     nombre: "Bromelias",
-    imagen: "https://drive.google.com/file/d/1VU1_qNGmgULcCv9TWLuhto1_0dgvUjfp/view?usp=drive_link"
+    imagen: "img/bormelia.jpg"
     },
 
     {
     id: 2,
     nombre: "Bonsai",
-    imagen: "https://drive.google.com/file/d/1PJhjD1Lbydtg8HYlOwDKRmg-9lK4xNGS/view?usp=drive_link"
+    imagen: "img/bonsai.jpg"
     },
 
     {
     id: 3,
     nombre: "Suculentas",
-    imagen: "https://drive.google.com/file/d/1lv4PlSb0F0YFECaoHVj1VKLK5LH-TYrj/view?usp=drive_link"
+    imagen: "img/suculenta.jpg"
     },
 
     {
     id: 4,
     nombre: "Carnivoras",
-    imagen: "https://drive.google.com/file/d/1KDhet0FJHDSmBsJTtI_hwk7NHkzd_ftY/view?usp=drive_link"
+    imagen: "img/carnivora.jpg"
     },
 
     {
     id: 5,
     nombre: "Orquídeas",
-    imagen: "https://drive.google.com/file/d/132igpWgY3SmBQSultl1U3XilJTLHsrsh/view?usp=drive_link"
+    imagen: "img/orquidea.jpg"
     },
 
 
     {
     id: 6,
     nombre: "Hojas",
-    imagen: "https://drive.google.com/file/d/180Kw7i63aPJPD_JYYGtyY0GazwiJ74hI/view?usp=drive_link"
+    imagen: "img/hoja.jpg"
     },
 
 
     {
     id: 7,
     nombre: "Huerta",
-    imagen: "https://drive.google.com/file/d/1Z64dXg9J86ZIub-73rBnyPAe_VorbGXm/view?usp=drive_link"
+    imagen: "img/huerto.jpg"
     },
 
 
     {
     id: 8,
     nombre: "Flores",
-    imagen: "https://drive.google.com/file/d/1SSybiBFcOkGGQ_kUOORpsc9JrGsWUcOK/view?usp=drive_link"
+    imagen: "img/flores.jpg"
     },
 
     {
     id: 9,
     nombre: "Enredadera",
-    imagen: "https://drive.google.com/file/d/1sMkrDo9_3oF7yLMrdTTAzg_I3cS2cSK9/view?usp=drive_link"
+    imagen: "img/enredadera.jpg"
     },
 
     {
     id: 10,
     nombre: "Buena Suerte",
-    imagen: "https://drive.google.com/file/d/1Hm9PWAVg2L9JFlV_5kvpzHd-esYaLQTm/view?usp=drive_link"
+    imagen: "img/buenasuerte.jpg"
     }
-]
+];
+
+categorias.forEach (categoria => {
+    const divCat = document.createElement ('div');
+    divCat.classList.add('categoria');
+
+    const destino = document.createElement ('a');
+    destino.href = "index.html"
+
+    const img = document.createElement('img');
+    img.src = categoria.imagen;
+
+    const nombre = document.createElement ('h3');
+    nombre.textContent = categoria.nombre;
+
+    divCat.appendChild(destino);
+    destino.appendChild(img);
+    destino.appendChild(nombre);
+
+    categoriasCont.appendChild (divCat);
+})
+
+
+
