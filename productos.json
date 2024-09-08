@@ -1,0 +1,302 @@
+[
+    {
+        "Id": 1, 
+        "Nombre": "Guzmania", 
+        "Tamaño": "Mediana", 
+        "Iluminación":  "Indirecta",
+        "Precio": 500,
+        "stock": 20,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2017/06/product-guzmania.jpg",
+        "categoria":{
+            "id_categoria": 1,
+            "nombre": "Bromelias"
+        }
+    },
+    {
+        "Id": 2,
+        "Nombre": "Vriesea",
+        "Tamaño": "Chica",
+        "Iluminación": "Indirecta",
+        "Precio": 400, 
+        "stock": 13,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/08/WhatsApp-Image-2020-08-19-at-10.23.30-AM.jpeg",
+        "categoria":{
+            "id_categoria": 1,
+            "nombre": "Bromelias"
+        }
+    },
+    {
+        "Id": 3,
+        "Nombre": "Lindenii",
+        "Tamaño": "Chica",
+        "Iluminación": "Indirecta",
+        "Precio":  300, 
+        "stock": 15,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/08/WhatsApp-Image-2020-08-19-at-10.23.31-AM-1.jpeg",
+        "categoria":{
+            "id_categoria": 1,
+            "nombre": "Bromelias"
+        }
+    },
+    {
+        "Id": 4,
+        "Nombre": "Neoregelia Carolinae",
+        "Tamaño": "Mediana",
+        "Iluminación": "Indirecta",
+        "Precio":  500, 
+        "stock": 14,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/08/WhatsApp-Image-2020-08-19-at-10.23.31-AM.jpeg",
+        "categoria":{
+            "id_categoria": 1,
+            "nombre": "Bromelias"
+        }
+    },
+    {
+        "Id": 5,
+        "Nombre": "Neoregelia devroe",
+        "Tamaño": "Chica",
+        "Iluminación": "Indirecta",
+        "Precio":  300, 
+        "stock": 10,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/08/WhatsApp-Image-2020-08-19-at-10.23.31-AM-2.jpeg",
+        "categoria":{
+            "id_categoria": 1,
+            "nombre": "Bromelias"
+        }
+    },
+    {
+        "Id": 6,
+        "Nombre": "Naranjo",
+        "Tamaño": "Mediana",
+        "Iluminación": "Indirecta",
+        "Precio":  600, 
+        "stock": 7,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/06/BONSAI-NARANJO-CALAMONDIN-1.jpg",
+        "categoria":{
+            "id_categoria": 2,
+            "nombre": "Bonsai"
+        }
+    },
+    {
+        "Id": 7,
+        "Nombre": "Guayacán",
+        "Tamaño": "Mediana",
+        "Iluminación": "Directa",
+        "Precio":  700, 
+        "stock": 5,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/06/bonsai_1200x31-min.jpg",
+        "categoria":{
+            "id_categoria": 2,
+            "nombre": "Bonsai"
+        }
+    },
+    {
+        "Id": 8,
+        "Nombre": "Cotoneaster",
+        "Tamaño": "Chica",
+        "Iluminación": "Indirecta",
+        "Precio":  500, 
+        "stock": 14,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/06/Bonsai-cotoneaster.jpg",
+        "categoria":{
+            "id_categoria": 2,
+            "nombre": "Bonsai"
+        }
+    },
+    {
+        "Id": 9,
+        "Nombre": "Pino rastrero",
+        "Tamaño": "Mini",
+        "Iluminación": "Directa",
+        "Precio":  300, 
+        "stock": 7,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/06/bonsai_1200x13-min.jpg",
+        "categoria":{
+            "id_categoria": 2,
+            "nombre": "Bonsai"
+        }
+    },
+    {
+        "Id": 10,
+        "Nombre": "Pino nana",
+        "Tamaño": "Mediana",
+        "Iluminación": "Indirecta",
+        "Precio":  500, 
+        "stock": 6,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/06/bonsai_1200x2-min.jpg",
+        "categoria":{
+            "id_categoria": 2,
+            "nombre": "Bonsai"
+        }
+    },
+    {
+        "Id": 10,
+        "Nombre": "Pino nana",
+        "Tamaño": "Mediana",
+        "Iluminación": "Indirecta",
+        "Precio": 500,
+        "stock": 6,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/06/bonsai_1200x2-min.jpg",
+        "categoria": {
+            "id_categoria": 2,
+            "nombre": "Bonsai"
+        }
+    },
+    {
+        "Id": 11,
+        "Nombre": "Pino patula",
+        "Tamaño": "Mediana",
+        "Iluminación": "Indirecta",
+        "Precio": 600,
+        "stock": 2,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/06/bonsai_1200x21-min-e1593193369329.png",
+        "categoria": {
+            "id_categoria": 2,
+            "nombre": "Bonsai"
+        }
+    },
+    {
+        "Id": 12,
+        "Nombre": "Pino canadiense",
+        "Tamaño": "Chica",
+        "Iluminación": "Directa",
+        "Precio": 400,
+        "stock": 20,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/06/bonsai_1200x6-min.jpg",
+        "categoria": {
+            "id_categoria": 2,
+            "nombre": "Bonsai"
+        }
+    },
+    {
+        "Id": 51,
+        "Nombre": "Dalia",
+        "Tamaño": "Chica",
+        "Iluminación": "Indirecta",
+        "Precio": 300,
+        "stock": 9,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/PLANTA-DALIA-300x300.jpg",
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Flores"
+        }
+    },
+    {
+        "Id": 52,
+        "Nombre": "Buganvilia",
+        "Tamaño": "Chica",
+        "Iluminación": "Indirecta",
+        "Precio": 200,
+        "stock": 9,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/05/PLANTA-BOUGANVILLEA-3--300x300.jpg",
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Flores"
+        }
+    },
+    {
+        "Id": 53,
+        "Nombre": "Petunia",
+        "Tamaño": "Mediana",
+        "Iluminación": "Indirecta",
+        "Precio": 500,
+        "stock": 7,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/PLANTA-PETUNIA-LARGA-VIDA-300x300.jpg",
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Flores"
+        }
+    },
+    {
+        "Id": 54,
+        "Nombre": "Begonia",
+        "Tamaño": "Mediana",
+        "Iluminación": "Indirecta",
+        "Precio": 400,
+        "stock": 5,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/05/PLANTA-BEGONIA-SEMPERFLORENS-300x300.jpg",
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Flores"
+        }
+    },
+    {
+        "Id": 55,
+        "Nombre": "kalanchoe",
+        "Tamaño": "Chica",
+        "Iluminación": "Indirecta",
+        "Precio": 400,
+        "stock": 4,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/PLANTA-KALANCHOE-3--600x600.jpg",
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Flores"
+        }
+    },
+    {
+        "Id": 56,
+        "Nombre": "Biflora",
+        "Tamaño": "Mediana",
+        "Iluminación": "Directa",
+        "Precio": 500,
+        "stock": 14,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/05/PLANTA-BIFLORA-300x300.jpg",
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Flores"
+        }
+    },
+    {
+        "Id": 57,
+        "Nombre": "Polka dot",
+        "Tamaño": "Mini",
+        "Iluminación": "Indirecta",
+        "Precio": 100,
+        "stock": 23,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/PLANTA-POLKA-DOT-600x600.jpg",
+        "categoria": {
+            "id_categoria": 8,
+            "nombre": "Buena suerte"
+        }
+    },
+    {
+        "Id": 58,
+        "Nombre": "Billete", 
+        "Tamaño": "Mini",
+        "Iluminación": "Indirecta",
+        "Precio": 100,
+        "stock": 30,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/producto-billete-600x600.jpg",
+        "categoria": {
+            "id_categoria": 8,
+            "nombre": "Buena suerte"
+        }
+    },
+    {
+        "Id": 59,
+        "Nombre": "Pachira",
+        "Tamaño": "Mini",
+        "Iluminación": "Directa",
+        "Precio": 100,
+        "stock": 38,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/PLANTA-PACHIRA-300x300.jpg",
+        "categoria": {
+            "id_categoria": 8,
+            "nombre": "Buena suerte"
+        }
+    },
+    {
+        "Id": 60,
+        "Nombre": "Monstera hoja rota",
+        "Tamaño": "Mini",
+        "Iluminación": "Directa",
+        "Precio": 100,
+        "stock": 38,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/06/PLANTA-MONSTERA-ANDANSONII.jpg",
+        "categoria": {
+            "id_categoria": 8,
+            "nombre": "Buena suerte"
+        }
+    }
+
+]
