@@ -168,6 +168,501 @@
             "nombre": "Bonsai"
         }
     },
+    {	
+        "Id": 13,
+        "Nombre": "Camándula",
+        "Tamaño": "Mediana",
+        "Iluminación": "Indirecta",
+        "Precio": 400,
+        "stock": 5,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/109.png",
+        "categoria": {
+            "id_categoria": 3,
+            "nombre": "Suculentas"
+        }
+    },
+    {
+        "Id": 14,
+        "Nombre": "Dolar",
+        "Tamaño": "Chica",
+        "Iluminación": "Directa",
+        "Precio": 300,
+        "stock": 1,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/05/97.png",
+        "categoria": {
+            "id_categoria": 3,
+            "nombre": "Suculentas"
+        }
+    },
+    {
+        "Id": 15,
+        "Nombre": "Filocactus",
+        "Tamaño": "Chica",
+        "Iluminación": "Indirecta",
+        "Precio": 300,
+        "stock": 5,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/05/59.png",
+        "categoria": {
+            "id_categoria": 3,
+            "nombre": "Suculentas"
+        }
+    },
+    {
+        "Id": 16,
+        "Nombre": "Venus",
+        "Tamaño": "mini",
+        "Iluminación": "Indirecta",
+        "Precio": 200,
+        "stock": 19,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/product-venus-atrapa-moscas-600x600.jpg",
+        "categoria": {
+            "id_categoria": 4,
+            "nombre": "Carnívoras"
+        }
+    },
+    {
+        "Id": 17,
+        "Nombre": "Terrarium",
+        "Tamaño": "mini",
+        "Iluminación": "Directa",
+        "Precio": 200,
+        "stock": 8,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/product-terrarium-carnivora-300x300.jpg",
+        "categoria": {
+            "id_categoria": 4,
+            "nombre": "Carnívoras"
+        }
+    },
+    {
+        "Id": 18,
+        "Nombre": "Nephentes",
+        "Tamaño": "mini",
+        "Iluminación": "Indirecta",
+        "Precio": 200,
+        "stock": 16,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2017/06/product-nephentes-pequenas-600x600.jpg",
+        "categoria": {
+            "id_categoria": 4,
+            "nombre": "Carnívoras"
+        }
+    },
+    {
+        "Id": 19,
+        "Nombre": "Phalanenopsis",
+        "Tamaño": "Mini",
+        "Iluminación": "Directa",
+        "Precio": 300,
+        "stock": 14,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/06/PLANTA-ORQUIDEA-MINI.jpg",
+        "categoria": {
+            "id_categoria": 5,
+            "nombre": "Orquídeas"
+        }
+    },
+    {
+        "Id": 20,
+        "Nombre": "Phalanenopsis",
+        "Tamaño": "Mediana",
+        "Iluminación": "Indirecta",
+        "Precio": 600,
+        "stock": 18,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2021/05/Orquidea-regalo-mama-vivero-2-varas--300x300.jpg",
+        "categoria": {
+            "id_categoria": 5,
+            "nombre": "Orquídeas"
+        }
+    },
+    {
+        "Id": 21,
+        "Nombre": "Abre caminos",
+        "Tamaño": "Mini",
+        "Iluminación": "Directa",
+        "Precio": 200,
+        "stock": 0,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/05/FITONIA-HOJA-PEQUE%C3%91A.jpg",
+        "categoria": {
+            "id_categoria": 6,
+            "nombre": "Hojas"
+        }
+    },
+    {
+        "Id": 22,
+        "Nombre": "Palo de brasil",
+        "Tamaño": "Grande",
+        "Iluminación": "Directa",
+        "Precio": 800,
+        "stock": 15,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/producto-tronco-del-brasil.jpg",
+        "categoria": {
+            "id_categoria": 6,
+            "nombre": "Hojas"
+        }
+    },
+    {
+        "Id": 23,
+        "Nombre": "Photus",
+        "Tamaño": "Chica",
+        "Iluminación": "Directa",
+        "Precio": 300,
+        "stock": 13,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/05/PLANTA-POTHUS-VARIEGADO.jpg",
+        "categoria": {
+            "id_categoria": 6,
+            "nombre": "Hojas"
+        }
+    },
+    {
+        "Id": 24,
+        "Nombre": "Monstera",
+        "Tamaño": "Grande",
+        "Iluminación": "Indirecta",
+        "Precio": 800,
+        "stock": 13,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/05/PLANTA-MONSTERA-DELICIOSA-.jpg",
+        "categoria": {
+            "id_categoria": 6,
+            "nombre": "Hojas"
+        }
+    },
+    {
+        "Id": 25,
+        "Nombre": "Hierbabuena",
+        "Tamaño": "Mediana",
+        "Iluminación": "Directa",
+        "Precio": 400,
+        "stock": 18,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/HIERBABUENA.png",
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Huerta"
+        }
+    },
+    {
+        "Id": 26,
+        "Nombre": "Palma areca",
+        "Tamaño": "Grande",
+        "Iluminación": "Indirecta",
+        "Precio": 600,
+        "stock": 2,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/producto-palma-areca.jpg",
+        "categoria": {
+            "id_categoria": 6,
+            "nombre": "Hojas"
+        }
+    },
+    {
+        "Id": 27,
+        "Nombre": "Calathea",
+        "Tamaño": "Chica",
+        "Iluminación": "Directa",
+        "Precio": 300,
+        "stock": 14,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/05/PLANTA-CALATHEA-LEUCONEURA.jpg",
+        "categoria": {
+            "id_categoria": 6,
+            "nombre": "Hojas"
+        }
+    },
+    {
+        "Id": 28,
+        "Nombre": "Centavito",
+        "Tamaño": "Chica",
+        "Iluminación": "Indirecta",
+        "Precio": 200,
+        "stock": 5,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/05/98-1.png",
+        "categoria": {
+            "id_categoria": 6,
+            "nombre": "Hojas"
+        }
+    },
+    {
+        "Id": 29,
+        "Nombre": "Afelandra",
+        "Tamaño": "Mediana",
+        "Iluminación": "Indirecta",
+        "Precio": 500,
+        "stock": 9,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/PLANTA-APHELANDRA-2-.jpg",
+        "categoria": {
+            "id_categoria": 6,
+            "nombre": "Hojas"
+        }
+    },
+    {
+        "Id": 30,
+        "Nombre": "Lavanda",
+        "Tamaño": "Chica",
+        "Iluminación": "Directa",
+        "Precio": 400,
+        "stock": 3,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/05/PLANTA-LAVANDA.jpg",
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Huerta"
+        }
+    },
+    {
+        "Id": 31,
+        "Nombre": "Albahaca",
+        "Tamaño": "Chica",
+        "Iluminación": "Indirecta",
+        "Precio": 400,
+        "stock": 20,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/PLANTA-ALBAHACA-300x300.jpg",
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Huerta"
+        }
+    },
+    {
+        "Id": 32,
+        "Nombre": "Ají",
+        "Tamaño": "Chica",
+        "Iluminación": "Indirecta",
+        "Precio": 400,
+        "stock": 4,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/PLANTA-AJI-CAPSICUM.jpg",
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Huerta"
+        }
+    },
+    {
+        "Id": 33,
+        "Nombre": "Romero",
+        "Tamaño": "Chica",
+        "Iluminación": "Directa",
+        "Precio": 430,
+        "stock": 9,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/05/16587az-600x600.jpg",
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Huerta"
+        }
+    },
+    {
+        "Id": 34,
+        "Nombre": "Albahaca morada",
+        "Tamaño": "Chica",
+        "Iluminación": "Indirecta",
+        "Precio": 450,
+        "stock": 3,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/05/PLANTA-AROMATICA-ALBAHACA-MORADA-2--300x300.jpg",
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Huerta"
+        }
+    },
+    {
+        "Id": 35,
+        "Nombre": "Orégano",
+        "Tamaño": "Chica",
+        "Iluminación": "Indirecta",
+        "Precio": 400,
+        "stock": 17,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/producto-oregano-600x600.jpg",
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Huerta"
+        }
+    },
+    {
+        "Id": 36,
+        "Nombre": "Cilantro",
+        "Tamaño": "Chica",
+        "Iluminación": "Directa",
+        "Precio": 430,
+        "stock": 2,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/05/PLANTA-CILANTRO-300x300.jpg",
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Huerta"
+        }
+    },
+    {
+        "Id": 37,
+        "Nombre": "Manzanilla",
+        "Tamaño": "Chica",
+        "Iluminación": "Indirecta",
+        "Precio": 450,
+        "stock": 9,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/producto-manzanilla-600x600.jpg",
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Huerta"
+        }
+    },
+    {
+        "Id": 38,
+        "Nombre": "Tomillo",
+        "Tamaño": "Chica",
+        "Iluminación": "Indirecta",
+        "Precio": 400,
+        "stock": 20,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/producto-tomillo-600x600.jpg",
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Huerta"
+        }
+    },
+    {
+        "Id": 39,
+        "Nombre": "Aloe Vera",
+        "Tamaño": "Chica",
+        "Iluminación": "Directa",
+        "Precio": 430,
+        "stock": 18,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/producto-aloe-vera-300x300.jpg",
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Huerta"
+        }
+    },
+    {
+        "Id": 40,
+        "Nombre": "Menta",
+        "Tamaño": "Chica",
+        "Iluminación": "Indirecta",
+        "Precio": 400,
+        "stock": 1,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/producto-menta-600x600.jpg",
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Huerta"
+        }
+    },
+    {
+        "Id": 41,
+        "Nombre": "Cidrón ",
+        "Tamaño": "Chica",
+        "Iluminación": "Indirecta",
+        "Precio": 450,
+        "stock": 8,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/producto-cidron-600x600.jpg",
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Huerta"
+        }
+    },
+    {
+        "Id": 42,
+        "Nombre": "Caléndula",
+        "Tamaño": "Chica",
+        "Iluminación": "Directa",
+        "Precio": 400,
+        "stock": 3,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/producto-calendula-600x600.jpg",
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Huerta"
+        }
+    },
+    {
+        "Id": 43,
+        "Nombre": "Anís",
+        "Tamaño": "Chica",
+        "Iluminación": "Directa",
+        "Precio": 500,
+        "stock": 6,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/01/producto-anis-600x600.jpg",
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Huerta"
+        }
+    },
+    {
+        "Id": 44,
+        "Nombre": "Monstera andansonii",
+        "Tamaño": "Mediana",
+        "Iluminación": "Indirecta",
+        "Precio": 600,
+        "stock": 17,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/06/PLANTA-MONSTERA-ANDANSONII.jpg",
+        "categoria": {
+            "id_categoria": 8,
+            "nombre": "Enredadera"
+        }
+    },
+    {
+        "Id": 45,
+        "Nombre": "Ficus rastrero",
+        "Tamaño": "Chica",
+        "Iluminación": "Indirecta",
+        "Precio": 350,
+        "stock": 1,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/05/PLANTA-FICUS-RASTRERO-O-FICUS-PUMILA-2--600x600.jpg",
+        "categoria": {
+            "id_categoria": 8,
+            "nombre": "Enredadera"
+        }
+    },
+    {
+        "Id": 46,
+        "Nombre": "Duranta rastrera",
+        "Tamaño": "Mediana",
+        "Iluminación": "Directa",
+        "Precio": 550,
+        "stock": 3,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/05/Lysimachia-nummularia-DURANTA-RASTRERA-300x300.png",
+        "categoria": {
+            "id_categoria": 8,
+            "nombre": "Enredadera"
+        }
+    },
+    {
+        "Id": 47,
+        "Nombre": "Mandevilla",
+        "Tamaño": "Mediana",
+        "Iluminación": "Indirecta",
+        "Precio": 600,
+        "stock": 14,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/05/PLANTA-MANDEVILLA-BLANCA-4-e1593198537240-300x300.jpg",
+        "categoria": {
+            "id_categoria": 8,
+            "nombre": "Enredadera"
+        }
+    },
+    {
+        "Id": 48,
+        "Nombre": "Incienso",
+        "Tamaño": "Chica",
+        "Iluminación": "Indirecta",
+        "Precio": 350,
+        "stock": 1,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/05/INCIENSO-2--300x300.jpg",
+        "categoria": {
+            "id_categoria": 8,
+            "nombre": "Enredadera"
+        }
+    },
+    {
+        "Id": 49,
+        "Nombre": "Pino variegado",
+        "Tamaño": "Mediana",
+        "Iluminación": "Directa",
+        "Precio": 700,
+        "stock": 11,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/06/PLANTA-PINO-RASTRERO-6--300x300.jpg",
+        "categoria": {
+            "id_categoria": 8,
+            "nombre": "Enredadera"
+        }
+    },
+    {
+        "Id": 50,
+        "Nombre": "Lengua de suegra",
+        "Tamaño": "Grande",
+        "Iluminación": "Indirecta",
+        "Precio": 800,
+        "stock": 1,
+        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/07/macetas-boho-300x300.jpg",
+        "categoria": {
+            "id_categoria": 6,
+            "nombre": "Hojas"
+        }
+    },
+
     {
         "Id": 51,
         "Nombre": "Dalia",
