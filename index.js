@@ -1,3 +1,4 @@
+// Categorias de index
 const categoriasCont = document.getElementById('categorias-contenedor');
 
 
@@ -87,6 +88,8 @@ categorias.forEach (categoria => {
 
     categoriasCont.appendChild (divCat);
 });
+
+// efecto de las imgs de index
 
 const imagenes = document.querySelectorAll('.imgCategoria');
 

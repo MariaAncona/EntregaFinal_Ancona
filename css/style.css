@@ -155,7 +155,7 @@ footer{
 
 /* Index */
 /* diseño del main */
-main{
+.main-index{
     margin-top: 10px;
     width: 100%;
     height: 500px;
@@ -168,7 +168,7 @@ main{
     justify-content: space-around;
 }
 
-main h1{
+.main-index h1{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 50px;
@@ -178,7 +178,7 @@ main h1{
 
 }
 
-main p{
+.main-index p{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -186,6 +186,8 @@ main p{
     font-size: 20px;
     padding-bottom: 15px;
 }
+
+/* formato de información */
 
 .informacion{
     display: flex;
@@ -221,6 +223,8 @@ main p{
     font-size: 16px;
 
 }
+
+/* formato de categorías */
 
 #categorias-contenedor{
     display: flex;
