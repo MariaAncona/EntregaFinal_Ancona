@@ -75,6 +75,7 @@ categorias.forEach (categoria => {
     destino.href = "index.html"
 
     const img = document.createElement('img');
+    img.classList.add('imgCategoria');
     img.src = categoria.imagen;
 
     const nombre = document.createElement ('h3');
@@ -85,7 +86,21 @@ categorias.forEach (categoria => {
     destino.appendChild(nombre);
 
     categoriasCont.appendChild (divCat);
-})
+});
+
+const imagenes = document.querySelectorAll('.imgCategoria');
+
+imagenes.forEach (img => {
+    
+    img.addEventListener ('mouseover', () => {
+        img.style.filter = "grayscale(0%)";
+    });
+
+    img.addEventListener ('mouseout', () => {
+        img.style.filter = "grayscale(100%)";
+    });
+
+});
 
 
 
