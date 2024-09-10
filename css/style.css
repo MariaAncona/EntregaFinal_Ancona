@@ -277,6 +277,7 @@ main p{
     text-decoration: none;
 }
 
+/* formato de pag tienda */
 
 .main-tienda{
     margin-top: 10px;
@@ -292,4 +293,23 @@ main p{
 .main-tienda h1{
     padding-top: 0px;
     margin-top: 0px;
+}
+
+.tienda-contenedor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding:20px;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color:rgb(97, 141, 104);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.plantas{
+ height: 100px;
+ width: 80px;
 }
