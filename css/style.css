@@ -310,6 +310,26 @@ main p{
 }
 
 .plantas{
- height: 100px;
- width: 80px;
+ height: 500px;
+ width: 350px;
+ margin: 10px;
+
+}
+
+.img-planta {
+    height:350px;
+    width: 300px;
+}
+
+.btn-compra{
+    margin-top: 10px;
+
+}
+
+.precio{
+    margin-top: 5px;
+}
+
+.nombre{
+    margin-top: 5px;
 }

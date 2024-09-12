@@ -12,7 +12,7 @@ fetch("/productos.json")
                 <div class ="txt-planta">
                     <h5 class = "nombre">${producto.Nombre} </h5>
                     <p class = "precio"> $${producto.Precio}.- </p>
-                    <a href="#" class= "btn-compra"> Agregar </a>
+                    <button class= "btn-compra"> Agregar </button>
                 </div>
             </div>
                 `
