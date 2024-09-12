@@ -282,7 +282,7 @@ main p{
 .main-tienda{
     margin-top: 10px;
     width: 100%;
-    height: 150px;
+    height: 300px;
     background-color:rgb(97, 141, 104) ;
     text-align: center;
     padding-top: 35px;
@@ -294,6 +294,47 @@ main p{
     padding-top: 0px;
     margin-top: 0px;
 }
+
+.filtro{
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.filtro p{
+    font-size: 15px;
+}
+
+.selector-categorias {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px; 
+    margin-left: 10px;
+    border: 5px solid #4CAF50;
+    font-family: "Roboto", sans-serif;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url();
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+
+.selector-categorias:hover {
+    border-color: #45a049; 
+}
+
+
+.selector-categorias option {
+    font-family: "Roboto", sans-serif;
+
+}
+
 
 .tienda-contenedor{
     display: flex;
@@ -333,3 +374,4 @@ main p{
 .nombre{
     margin-top: 5px;
 }
+
