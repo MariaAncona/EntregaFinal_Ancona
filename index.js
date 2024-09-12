@@ -73,7 +73,11 @@ categorias.forEach (categoria => {
     divCat.classList.add('categoria');
 
     const destino = document.createElement ('a');
-    destino.href = "index.html"
+    destino.href = "tienda.html"
+
+    destino.addEventListener('click', function(){
+        localStorage.setItem('filtroCatHome', categoria.nombre.toLowerCase());
+    });
 
     const img = document.createElement('img');
     img.classList.add('imgCategoria');

@@ -31,7 +31,16 @@ navegacion.className = "navbar";
 
 for (const link of enlaces) {
     const li = document.createElement('li');
-    li.innerHTML = `<a href="${link.link}.html">${link.nombre}</a> `;
+    const a = document.createElement('a');
+    a.href = `${link.link}.html`;
+    a.className = "linknav";
+    a.textContent = link.nombre;
+
+    a.addEventListener('click', () => { 
+        localStorage.removeItem('filtroCatSelector'); 
+    });
+
+    li.appendChild(a);
     ul.appendChild(li);
 };
 
@@ -55,3 +64,12 @@ function efectoPromocion (elemento, texto, i=0){
 
 
 efectoPromocion (promociones, texto);
+
+const home = document.getElementById('home');
+
+home.addEventListener('click', () => {
+    localStorage.removeItem('filtroCatSelector');
+});
+
+
+
