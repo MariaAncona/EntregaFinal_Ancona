@@ -121,19 +121,6 @@
         "Nombre": "Pino nana",
         "Tamaño": "Mediana",
         "Iluminación": "Indirecta",
-        "Precio":  500, 
-        "stock": 6,
-        "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/06/bonsai_1200x2-min.jpg",
-        "categoria":{
-            "id_categoria": 2,
-            "nombre": "Bonsai"
-        }
-    },
-    {
-        "Id": 10,
-        "Nombre": "Pino nana",
-        "Tamaño": "Mediana",
-        "Iluminación": "Indirecta",
         "Precio": 500,
         "stock": 6,
         "Imagen": "https://mygarden.com.co/wp-content/uploads/2020/06/bonsai_1200x2-min.jpg",
