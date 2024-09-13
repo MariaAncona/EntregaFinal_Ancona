@@ -1,5 +1,10 @@
 
 
+let carrito = [];
+let productos = [];
+
+// Renderizar productos desde JSON producto
+
 document.addEventListener('DOMContentLoaded', () => {
     const seccionTienda = document.getElementById('seccionTienda');
     const selectorCategorias = document.getElementById('selectCategoria');
@@ -9,7 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     fetch("/productos.json")
         .then(response => response.json())
-        .then(productos => {
+        .then(data => {
+            productos = data;
 
             mostrarProductos(productos);
             if (categoriaFiltroIndex && categoriaFiltroIndex !== 'non') {
@@ -47,13 +53,44 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="txt-planta">
                         <h5 class="nombre">${producto.Nombre}</h5>
                         <p class="precio">$${producto.Precio}.-</p>
-                        <button class="btn-compra">Agregar</button>
+                        <button onclick="addToCart(${producto.Id})" class="btn-compra">Agregar</button>
                     </div>
                 </div>
             `;
             seccionTienda.appendChild(planta); 
         });
     }
+    
+
 });
 
-let agregar = document.getElementsByClassName('btn-compra');
+
+// funcion de agregar al carrito
+function addToCart(productoID) {
+    const planta = productos.find(p => p.Id === productoID);
+
+    if (planta) {
+        carrito.push({
+            id: planta.Id,
+            nombre: planta.Nombre,
+            precio: planta.Precio
+        });
+
+        localStorage.setItem("Cart", JSON.stringify(carrito));
+        
+        Toastify({
+            text: `Se agregó ${planta.Nombre} al carrito`,
+            duration: 3000,
+            style: {
+                background: '#78c478'
+            }
+            }).showToast();
+
+    } else {
+        console.error("Producto no encontrado con ID:", productoID);
+        
+    }
+}
+
+
+
