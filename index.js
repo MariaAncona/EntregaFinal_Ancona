@@ -1,6 +1,13 @@
 // Categorias de index
 const categoriasCont = document.getElementById('categorias-contenedor');
 
+// Sweet alert para suscribirse al newsletter
+document.addEventListener('DOMContentLoaded', () => {
+
+Swal.fire("20% de descuento en tu primera compra");
+  
+});
+
 
 
 const categorias =[
@@ -108,6 +115,8 @@ imagenes.forEach (img => {
     });
 
 });
+
+
 
 
 
