@@ -36,6 +36,7 @@ for (const link of enlaces) {
     a.className = "linknav";
     a.textContent = link.nombre;
 
+    // borrar local storage saliendo de la tienda
     a.addEventListener('click', () => { 
         localStorage.removeItem('filtroCatSelector'); 
     });
@@ -65,11 +66,33 @@ function efectoPromocion (elemento, texto, i=0){
 
 efectoPromocion (promociones, texto);
 
+// Borrar localStorage con botton home
 const home = document.getElementById('home');
 
 home.addEventListener('click', () => {
     localStorage.removeItem('filtroCatSelector');
 });
+
+// Abrir y cerrar carrito de compra
+
+const carritoBtn = document.querySelector('#carrito');
+const sidebar = document.getElementById('sidebarCarrito');
+const cerrarCarritoBtn = document.querySelector('#cerrarCarrito');
+
+
+
+carritoBtn.addEventListener('click', function(e) {
+    e.preventDefault(); 
+    sidebar.classList.toggle('open');
+
+});
+
+cerrarCarritoBtn.addEventListener('click', function(e) {
+    sidebar.classList.remove('open'); 
+});
+
+
+
 
 
 

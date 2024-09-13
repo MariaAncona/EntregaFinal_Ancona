@@ -38,6 +38,7 @@
     font-weight: 500;
     font-style: normal;
     
+    
 
 }
 .navbar ul {
@@ -78,6 +79,7 @@
     width: 205px;
 }
 
+/* Carrito de compra */
 #carrito {
     position: absolute;
     right: 20px;
@@ -97,6 +99,45 @@
     height: 22px;
     width: 22px;
 }
+
+
+
+.sidebar {
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background-color: #1111114e;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: white;
+    z-index: 999;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.sidebar h2{
+    text-align: center;
+
+}
+
+.sidebar.open{
+    width:500px;
+}
+
+#cerrarCarrito {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;}
 
 
 /* diseño de botón */
@@ -374,4 +415,5 @@ main p{
 .nombre{
     margin-top: 5px;
 }
+
 

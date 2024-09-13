@@ -55,3 +55,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+let agregar = document.getElementsByClassName('btn-compra');
