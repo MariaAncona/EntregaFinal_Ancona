@@ -66,6 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // funcion de agregar al carrito
 function addToCart(productoID) {
+  let carrito = JSON.parse (localStorage.getItem("Cart"));
   const planta = productos.find((p) => p.Id === productoID);
 
   if (planta) {
@@ -87,6 +88,8 @@ function addToCart(productoID) {
     }
 
     localStorage.setItem("Cart", JSON.stringify(carrito));
+    renderizarCarrito();
+    actualizarTotalCarrito();
 
     Toastify({
       text: `Se agregó ${planta.Nombre} al carrito`,

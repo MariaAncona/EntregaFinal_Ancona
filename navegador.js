@@ -93,11 +93,13 @@ cerrarCarritoBtn.addEventListener('click', function(e) {
 
 // Renderizar el carrito
 
-document.addEventListener('DOMContentLoaded', () => {
+function renderizarCarrito (){
 
     const carritoRenderizado = document.getElementById('agregadosCarrito');
     let cart = JSON.parse(localStorage.getItem ('Cart'));
     console.log (cart);
+
+    carritoRenderizado.innerHTML = '';
     
     if(cart.length> 0) {
         cart.forEach(producto => { 
@@ -110,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
                <h3>Planta: ${producto.nombre}</h3>
                <p>Cantidad: ${producto.cantidad}</p>
                <p>Precio: $${producto.precioTotal}</p>
-               <button id="borrarProducto" class="btn-carrito"> Eliminar </button>
+               <button id="borrarProducto" class="btn-carrito" onclick="borrarProducto(${producto.id})"> Eliminar </button>
                `;
                productosDiv.appendChild(productoDiv);
                carritoRenderizado.appendChild(productosDiv);
@@ -119,8 +121,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     } else {
         carritoRenderizado.innerHTML= 
-        `<p> Agrega tus plantas </p>`;
+        `<p>Agrega tus plantas</p>`;
     }
+}
+
+//boton para eliminar artículo de carrito
+
+function borrarProducto(productoID) {
+    let carrito = JSON.parse(localStorage.getItem("Cart"));
+  
+    carrito = carrito.filter((producto) => producto.id !== productoID);
+    localStorage.setItem("Cart", JSON.stringify(carrito));
+
+    renderizarCarrito();
+    actualizarTotalCarrito();
+}  
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    renderizarCarrito();
+    actualizarTotalCarrito();
+    
 });
 
 
