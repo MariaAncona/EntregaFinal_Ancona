@@ -91,6 +91,34 @@ cerrarCarritoBtn.addEventListener('click', function(e) {
     sidebar.classList.remove('open'); 
 });
 
+// Renderizar el carrito
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const carritoRenderizado = document.getElementById('agregadosCarrito');
+    let cart = JSON.parse(localStorage.getItem ('Cart'));
+    console.log (cart);
+    
+    if(cart.length> 0) {
+        cart.forEach(producto => { 
+            const productosDiv = document.createElement('div');
+            productosDiv.classList.add('producto-agregado');
+            productosDiv.innerHTML = `
+               <img class="img-planta-carrito" src=${producto.imagen} alt="${producto.nombre}"/>
+               <h5>Precio: $${producto.nombre}</h5>
+               <p>Precio: $${producto.precio}</p>
+               <button id="borrarProducto" class="btn-carrito"> Eliminar </button>
+               `;
+               carritoRenderizado.appendChild(productosDiv);
+            
+        });
+    } else {
+        carritoRenderizado.innerHTML= `<p> Agrega tus plantas`;
+    }
+});
+
+
+
 
 
 

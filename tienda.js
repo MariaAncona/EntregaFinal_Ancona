@@ -73,7 +73,8 @@ function addToCart(productoID) {
         carrito.push({
             id: planta.Id,
             nombre: planta.Nombre,
-            precio: planta.Precio
+            precio: planta.Precio,
+            imagen: planta.Imagen
         });
 
         localStorage.setItem("Cart", JSON.stringify(carrito));

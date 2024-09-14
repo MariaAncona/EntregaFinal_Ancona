@@ -4,8 +4,13 @@ const categoriasCont = document.getElementById('categorias-contenedor');
 // Sweet alert para suscribirse al newsletter
 document.addEventListener('DOMContentLoaded', () => {
 
-Swal.fire("20% de descuento en tu primera compra");
-  
+    Swal.fire({
+        title: 'Promoción Exclusiva',
+        text: `20% de descuento en tu primera compra`,
+        confirmButtonText: 'Comprar',
+        background: '#f9f9f9db',
+        confirmButtonColor: '#78c478',
+    });
 });
 
 
