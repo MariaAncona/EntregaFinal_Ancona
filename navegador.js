@@ -102,13 +102,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if(cart.length> 0) {
         cart.forEach(producto => { 
             const productosDiv = document.createElement('div');
-            productosDiv.classList.add('producto-agregado');
-            productosDiv.innerHTML = `
+            const productoDiv =document.createElement('div');
+            productosDiv.classList.add('productos-agregados');
+            productoDiv.classList.add('producto-agregado');
+            productoDiv.innerHTML = `
                <img class="img-planta-carrito" src=${producto.imagen} alt="${producto.nombre}"/>
-               <h5>Precio: $${producto.nombre}</h5>
-               <p>Precio: $${producto.precio}</p>
+               <h3>Planta: ${producto.nombre}</h3>
+               <p>Cantidad: ${producto.cantidad}</p>
+               <p>Precio: $${producto.precioTotal}</p>
                <button id="borrarProducto" class="btn-carrito"> Eliminar </button>
                `;
+               productosDiv.appendChild(productoDiv);
                carritoRenderizado.appendChild(productosDiv);
             
         });

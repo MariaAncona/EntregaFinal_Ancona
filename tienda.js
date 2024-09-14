@@ -5,49 +5,51 @@ let productos = [];
 
 // Renderizar productos desde JSON producto
 
-document.addEventListener('DOMContentLoaded', () => {
-    const seccionTienda = document.getElementById('seccionTienda');
-    const selectorCategorias = document.getElementById('selectCategoria');
-    const categoriaFiltroIndex = localStorage.getItem('filtroCatHome');
-    
-    localStorage.removeItem('filtroCatHome');
+document.addEventListener("DOMContentLoaded", () => {
+  const seccionTienda = document.getElementById("seccionTienda");
+  const selectorCategorias = document.getElementById("selectCategoria");
+  const categoriaFiltroIndex = localStorage.getItem("filtroCatHome");
 
-    fetch("/productos.json")
-        .then(response => response.json())
-        .then(data => {
-            productos = data;
+  localStorage.removeItem("filtroCatHome");
 
-            mostrarProductos(productos);
-            if (categoriaFiltroIndex && categoriaFiltroIndex !== 'non') {
-                const productosFiltrados = productos.filter(producto =>
-                    producto.categoria.nombre.toLowerCase() === categoriaFiltroIndex
-                );
-                mostrarProductos(productosFiltrados);
-                selectorCategorias.value = categoriaFiltroIndex; 
-            }
+  fetch("/productos.json")
+    .then((response) => response.json())
+    .then((data) => {
+      productos = data;
 
-            selectorCategorias.addEventListener('change', (event) => {
-                const categoriaFiltro = event.target.value.toLowerCase();
-                if (categoriaFiltro !== 'non') {
-                    const productosFiltrados = productos.filter(producto =>
-                        producto.categoria.nombre.toLowerCase() === categoriaFiltro
-                    );
-                    mostrarProductos(productosFiltrados);
-                    localStorage.setItem('filtroCatSelector', categoriaFiltro);
-                } else {
-                    mostrarProductos(productos);
-                    localStorage.removeItem('filtroCatSelector'); 
-                }
-            });
-        })
-        .catch(error => console.error("Error al cargar los productos:", error));
+      mostrarProductos(productos);
+      if (categoriaFiltroIndex && categoriaFiltroIndex !== "non") {
+        const productosFiltrados = productos.filter(
+          (producto) =>
+            producto.categoria.nombre.toLowerCase() === categoriaFiltroIndex
+        );
+        mostrarProductos(productosFiltrados);
+        selectorCategorias.value = categoriaFiltroIndex;
+      }
 
-    function mostrarProductos(productosFiltrados) {
-        seccionTienda.innerHTML = '';  
+      selectorCategorias.addEventListener("change", (event) => {
+        const categoriaFiltro = event.target.value.toLowerCase();
+        if (categoriaFiltro !== "non") {
+          const productosFiltrados = productos.filter(
+            (producto) =>
+              producto.categoria.nombre.toLowerCase() === categoriaFiltro
+          );
+          mostrarProductos(productosFiltrados);
+          localStorage.setItem("filtroCatSelector", categoriaFiltro);
+        } else {
+          mostrarProductos(productos);
+          localStorage.removeItem("filtroCatSelector");
+        }
+      });
+    })
+    .catch((error) => console.error("Error al cargar los productos:", error));
 
-        productosFiltrados.forEach(producto => {
-            const planta = document.createElement('div');
-            planta.innerHTML = `
+  function mostrarProductos(productosFiltrados) {
+    seccionTienda.innerHTML = "";
+
+    productosFiltrados.forEach((producto) => {
+      const planta = document.createElement("div");
+      planta.innerHTML = `
                 <div class="plantas">
                     <img class="img-planta" src="${producto.Imagen}" alt="${producto.Nombre}" />
                     <div class="txt-planta">
@@ -57,40 +59,45 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
             `;
-            seccionTienda.appendChild(planta); 
-        });
-    }
-    
-
+      seccionTienda.appendChild(planta);
+    });
+  }
 });
-
 
 // funcion de agregar al carrito
 function addToCart(productoID) {
-    const planta = productos.find(p => p.Id === productoID);
+  const planta = productos.find((p) => p.Id === productoID);
 
-    if (planta) {
-        carrito.push({
-            id: planta.Id,
-            nombre: planta.Nombre,
-            precio: planta.Precio,
-            imagen: planta.Imagen
-        });
+  if (planta) {
+    const productoEnCarrito = carrito.find((item) => item.id === productoID);
 
-        localStorage.setItem("Cart", JSON.stringify(carrito));
-        
-        Toastify({
-            text: `Se agregó ${planta.Nombre} al carrito`,
-            duration: 3000,
-            style: {
-                background: '#78c478'
-            }
-            }).showToast();
-
+    if (productoEnCarrito) {
+      productoEnCarrito.cantidad += 1;
+      productoEnCarrito.precioTotal =
+        productoEnCarrito.cantidad * productoEnCarrito.precio;
     } else {
-        console.error("Producto no encontrado con ID:", productoID);
-        
+      carrito.push({
+        id: planta.Id,
+        nombre: planta.Nombre,
+        precio: planta.Precio,
+        imagen: planta.Imagen,
+        cantidad: 1,
+        precioTotal: planta.Precio,
+      });
     }
+
+    localStorage.setItem("Cart", JSON.stringify(carrito));
+
+    Toastify({
+      text: `Se agregó ${planta.Nombre} al carrito`,
+      duration: 3000,
+      style: {
+        background: "#78c478",
+      },
+    }).showToast();
+  } else {
+    console.error("Producto no encontrado con ID:", productoID);
+  }
 }
 
 

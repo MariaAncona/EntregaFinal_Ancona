@@ -139,6 +139,26 @@
     color: white;
     cursor: pointer;}
 
+#agregadosCarrito{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.producto-agregado{
+    margin: 20px;
+}
+
+.img-planta-carrito{
+    height: 200px;
+
+}
+
+
+.btn-carrito{
+    font-size: 10px;
+
+}
+
 
 /* diseño de botón */
 
