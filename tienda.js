@@ -95,10 +95,15 @@ function addToCart(productoID) {
         background: "#78c478",
       },
     }).showToast();
+
+   
   } else {
     console.error("Producto no encontrado con ID:", productoID);
   }
 }
+
+
+
 
 
 

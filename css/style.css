@@ -118,15 +118,18 @@
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
+    justify-content: center;
 }
 
 .sidebar h2{
     text-align: center;
+    font-size: 30px;
 
 }
 
 .sidebar.open{
     width:500px;
+    justify-content: center;
 }
 
 #cerrarCarrito {
@@ -139,24 +142,46 @@
     color: white;
     cursor: pointer;}
 
-#agregadosCarrito{
+#agregadosCarrito {
     text-align: center;
     margin-top: 20px;
+    justify-content: center;
+}
+
+.productos-agregados{
+display: flex;           
+flex-direction: column;  
+justify-content: center; 
+align-items: center; 
+justify-content: center;
+margin-bottom: 20px;
 }
 
 .producto-agregado{
-    margin: 20px;
+    margin-top: 20px;
+    height: 350px;
+    width: 200px;
+    background-color: #f9f9f98c;
+    color: #333;
 }
 
 .img-planta-carrito{
     height: 200px;
+    width: 150px;
+    margin-top: 10px;
 
 }
 
 
 .btn-carrito{
+    margin-top: 5px;
     font-size: 10px;
 
+}
+
+.total-pago{
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 

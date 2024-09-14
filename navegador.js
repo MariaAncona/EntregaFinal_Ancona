@@ -114,11 +114,25 @@ document.addEventListener('DOMContentLoaded', () => {
                `;
                productosDiv.appendChild(productoDiv);
                carritoRenderizado.appendChild(productosDiv);
+               
             
         });
     } else {
-        carritoRenderizado.innerHTML= `<p> Agrega tus plantas`;
+        carritoRenderizado.innerHTML= 
+        `<p> Agrega tus plantas </p>`;
     }
+});
+
+
+function actualizarTotalCarrito(){
+    const carritoStorage = JSON.parse(localStorage.getItem("Cart"));
+    const total = carritoStorage.reduce((sum, item) => sum + item.precioTotal, 0);
+    const totalDiv = document.getElementById('total');
+    totalDiv.textContent = `Total: $${total}`;
+}
+
+document.addEventListener('DOMContentLoaded', ()=> {
+    actualizarTotalCarrito();
 });
 
 
