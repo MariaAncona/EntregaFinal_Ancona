@@ -65,17 +65,18 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // funcion de agregar al carrito
+
 function addToCart(productoID) {
-  let carrito = JSON.parse (localStorage.getItem("Cart"));
-  const planta = productos.find((p) => p.Id === productoID);
+  const planta = productos.find(p => p.Id === productoID);
 
   if (planta) {
-    const productoEnCarrito = carrito.find((item) => item.id === productoID);
+    let carrito = JSON.parse(localStorage.getItem("Cart")) || [];
+
+    const productoEnCarrito = carrito.find(item => item.id === productoID);
 
     if (productoEnCarrito) {
       productoEnCarrito.cantidad += 1;
-      productoEnCarrito.precioTotal =
-        productoEnCarrito.cantidad * productoEnCarrito.precio;
+      productoEnCarrito.precioTotal = productoEnCarrito.cantidad * productoEnCarrito.precio;
     } else {
       carrito.push({
         id: planta.Id,
@@ -83,23 +84,23 @@ function addToCart(productoID) {
         precio: planta.Precio,
         imagen: planta.Imagen,
         cantidad: 1,
-        precioTotal: planta.Precio,
+        precioTotal: planta.Precio
       });
     }
 
     localStorage.setItem("Cart", JSON.stringify(carrito));
-    renderizarCarrito();
-    actualizarTotalCarrito();
 
     Toastify({
       text: `Se agregó ${planta.Nombre} al carrito`,
       duration: 3000,
       style: {
-        background: "#78c478",
-      },
+        background: "#78c478"
+      }
     }).showToast();
 
-   
+    actualizarTotalCarrito(); 
+    renderizarCarrito ();
+
   } else {
     console.error("Producto no encontrado con ID:", productoID);
   }

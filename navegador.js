@@ -128,7 +128,7 @@ function renderizarCarrito (){
 //boton para eliminar artículo de carrito
 
 function borrarProducto(productoID) {
-    let carrito = JSON.parse(localStorage.getItem("Cart"));
+    let carrito = JSON.parse(localStorage.getItem("Cart")) || [];
   
     carrito = carrito.filter((producto) => producto.id !== productoID);
     localStorage.setItem("Cart", JSON.stringify(carrito));
@@ -144,9 +144,10 @@ document.addEventListener('DOMContentLoaded', () => {
     
 });
 
+//funcion para actualilzar el total del carrito
 
 function actualizarTotalCarrito(){
-    const carritoStorage = JSON.parse(localStorage.getItem("Cart"));
+    const carritoStorage = JSON.parse(localStorage.getItem("Cart")) || [];
     const total = carritoStorage.reduce((sum, item) => sum + item.precioTotal, 0);
     const totalDiv = document.getElementById('total');
     totalDiv.textContent = `Total: $${total}`;
@@ -155,6 +156,33 @@ function actualizarTotalCarrito(){
 document.addEventListener('DOMContentLoaded', ()=> {
     actualizarTotalCarrito();
 });
+
+
+//funcion para eliminar artícullos del carrito de compra. 
+
+function finalizarCompra () {
+
+        localStorage.removeItem('Cart');
+        actualizarTotalCarrito();
+        renderizarCarrito ();
+
+        Toastify({
+            text: "¡Gracias por tu compra! Vuelve pronto",
+            duration: 3000,
+            style: {
+              background: "#4caf50"
+            }
+          }).showToast();
+
+}
+
+document.getElementById('finalizarCompra').addEventListener ('click', finalizarCompra);
+
+
+
+
+
+
 
 
 
