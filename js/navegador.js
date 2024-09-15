@@ -97,11 +97,11 @@ function renderizarCarrito (){
 
     const carritoRenderizado = document.getElementById('agregadosCarrito');
     let cart = JSON.parse(localStorage.getItem ('Cart'));
-    console.log (cart);
+
 
     carritoRenderizado.innerHTML = '';
     
-    if(cart.length> 0) {
+    if(cart) {
         cart.forEach(producto => { 
             const productosDiv = document.createElement('div');
             const productoDiv =document.createElement('div');
@@ -162,17 +162,18 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
 function finalizarCompra () {
 
+
         localStorage.removeItem('Cart');
         actualizarTotalCarrito();
-        renderizarCarrito ();
+        renderizarCarrito();
 
-        Toastify({
-            text: "¡Gracias por tu compra! Vuelve pronto",
-            duration: 3000,
-            style: {
-              background: "#4caf50"
-            }
-          }).showToast();
+        Swal.fire({
+            title: 'Compra realizada',
+            text: `Gracias por tu compra. Vuelve pronto.`,
+            confirmButtonText: 'Aceptar',
+            background: '#f9f9f9db',
+            confirmButtonColor: '#78c478',
+        });
 
 }
 

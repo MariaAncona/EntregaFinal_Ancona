@@ -1,7 +1,7 @@
 // Categorias de index
 const categoriasCont = document.getElementById('categorias-contenedor');
 
-// Sweet alert para suscribirse al newsletter
+// Sweet alert de promocion primera compra
 document.addEventListener('DOMContentLoaded', () => {
 
     Swal.fire({
