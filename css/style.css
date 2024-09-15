@@ -333,7 +333,7 @@ main p{
     height: fit-content;
     background-color:rgb(97, 141, 104);
     align-items: middle;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .categoria{
@@ -464,4 +464,48 @@ main p{
     margin-top: 5px;
 }
 
+/* Diseño de formulario */
 
+.main-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#contactForm {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #45a049;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+#contactForm h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+#contactForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #555;
+}
+
+#contactForm input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
