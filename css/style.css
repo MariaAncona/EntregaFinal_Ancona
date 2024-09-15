@@ -22,6 +22,22 @@
     font-style: normal;
   
   }
+/* tamaño tablet */
+  @media (max-width: 768px) {
+    #contenedor-promociones {
+        font-size: 14px; 
+        height: 30px; 
+        padding-top: 8px; 
+    }
+}
+/* tamaño celular */
+@media (max-width: 480px) {
+    #contenedor-promociones {
+        font-size: 12px; 
+        height: 35px; 
+        padding-top: 10px; 
+    }
+}
 /* diseño de todo el header */
   #header{
     display: flex;
@@ -77,6 +93,50 @@
 .logo img:hover{
     height: 22px;
     width: 205px;
+}
+/* tamaño tablet */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .navbar ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0; 
+    }
+
+    .logo {
+
+        margin-bottom: 10px; 
+    }
+
+    .logo img {
+        height: 30px;
+        width: 150px; 
+    }
+}
+
+/* tamaño celular */
+@media (max-width: 480px) {
+    .navbar ul {
+        padding: 0;
+    }
+
+    .navbar ul li {
+        margin: 5px 0; 
+    }
+
+    .logo img {
+        height: 25px;
+        width: 140px;
+        position: absolute;
+        left: 5px;
+    }
 }
 
 /* Carrito de compra */
@@ -139,7 +199,30 @@
     border: none;
     font-size: 24px;
     color: white;
-    cursor: pointer;}
+    cursor: pointer;
+}
+/* tamaño tablet */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 80%; 
+    }
+}
+
+/* tamaño celular */
+@media (max-width: 480px) {
+    .sidebar {
+        width: 80%;
+        padding-top: 50px;
+    }
+
+    .sidebar h2 {
+        font-size: 24px; 
+    }
+
+    #cerrarCarrito {
+        font-size: 20px; 
+    }
+}
 
 #agregadosCarrito {
     text-align: center;
@@ -157,6 +240,7 @@ margin-bottom: 20px;
 }
 
 .producto-agregado{
+    justify-self: center;
     margin-top: 20px;
     height: 350px;
     width: 200px;
@@ -185,6 +269,50 @@ margin-bottom: 20px;
     margin-bottom: 20px;
     border-top: 3px solid rgba(0, 0, 0, 0.421);
     padding-top: 10px;
+}
+
+/* tamaño tablet */
+@media (max-width: 768px) {
+    .producto-agregado {
+        height: 300px; 
+        width: 180px; 
+    }
+
+    .img-planta-carrito {
+        height: 150px; 
+        width: 120px; 
+    }
+
+    .btn-carrito {
+        font-size: 12px; 
+    }
+
+    .total-pago {
+        font-size: 18px; 
+        margin-top: 30px; 
+    }
+}
+
+/* tamaño celular */
+@media (max-width: 480px) {
+    .producto-agregado {
+        height: 280px; 
+        width: 160px; 
+    }
+
+    .img-planta-carrito {
+        height: 120px; 
+        width: 100px;
+    }
+
+    .btn-carrito {
+        font-size: 14px; 
+    }
+
+    .total-pago {
+        font-size: 16px; 
+        margin-top: 20px; 
+    }
 }
 
 
@@ -238,6 +366,36 @@ footer{
 .logo2 img{
     height: 20px;
     width: 200px;
+}
+/* tamaño tablet */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; 
+        padding: 20px;
+    }
+
+    .redes-sociales img {
+        height: 30px;
+        width: 30px; 
+        margin: 5px 0; 
+    }
+
+    .logo2 img {
+        height: 30px;
+        width: 150px; 
+        margin: 10px 0; 
+    }
+}
+/* tamaño celular */
+@media (max-width: 480px) {
+    .redes-sociales img {
+        height: 25px;
+        width: 25px; 
+    }
+
+    .logo2 img {
+        width: 140px; 
+    }
 }
 
 /* -termina todas las páginas */
@@ -366,6 +524,15 @@ main p{
     text-decoration: none;
 }
 
+/* tamaño table y celular */
+
+@media (max-width: 768px) {
+    .categoria h3{
+        font-size: 25px;
+    }
+}
+
+
 /* formato de pag tienda */
 
 .main-tienda{
@@ -425,6 +592,8 @@ main p{
 }
 
 
+
+
 .tienda-contenedor{
     display: flex;
     justify-content: space-around;
@@ -462,6 +631,74 @@ main p{
 
 .nombre{
     margin-top: 5px;
+}
+
+/* tamaño tablet */
+@media (max-width: 768px) {
+    .tienda-contenedor {
+        justify-content: center; 
+    }
+
+    .plantas {
+        height: auto; 
+        width: 90%;
+        margin: 10px 0; 
+    }
+
+    .img-planta {
+        height: 250px; 
+        width: 100%;
+    }
+
+    .nombre, .precio, .btn-compra {
+        font-size: 1rem; 
+    }
+
+    .main-tienda {
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .selector-categorias {
+        max-width: 50%; 
+        margin: 0 auto;
+        padding: 8px;
+    }
+
+    .filtro p {
+        font-size: 14px; 
+    }
+}
+
+
+/* tamaño celular */
+@media (max-width: 480px) {
+    .plantas {
+        width: 100%;
+        margin: 10px 0; 
+    }
+
+    .img-planta {
+        width: 200px;
+        height: 220px; 
+    }
+
+    .nombre, .precio, .btn-compra {
+        font-size: 0.9rem; 
+    }
+
+    .main-tienda {
+        padding-top: 5px;
+    }
+
+    .filtro p {
+        font-size: 12px; 
+    }
+
+    .selector-categorias {
+        max-width: 50%;
+        padding: 6px;
+    }
 }
 
 /* Diseño de formulario */
@@ -510,6 +747,46 @@ main p{
     box-sizing: border-box;
 }
 
+/* tamaño tablet */
+@media (max-width: 768px) {
+    .main-contacto {
+        padding: 10px;
+        height: 88vh;  
+    }
+
+    #contactForm {
+        padding: 15px;
+        max-width: 100%;  
+    }
+
+    #contactForm h2 {
+        font-size: 20px;
+    }
+
+    #contactForm input {
+        padding: 8px;  
+    }
+
+    #contactForm button {
+        padding: 8px;  
+    }
+}
+
+/* tamaño celular */
+@media (max-width: 480px) {
+    #contactForm h2 {
+        font-size: 18px;
+    }
+
+    #contactForm input {
+        padding: 6px; 
+    }
+
+    #contactForm button {
+        padding: 6px;
+    }
+}
+
 /* Diseño About us */ 
 
 .main-aboutus {
@@ -520,6 +797,9 @@ main p{
     font-style: normal;
     color:#555;
     height: fit-content;
+    justify-content: center;
+    
+
 }
 
 .main-aboutus h1{
@@ -531,9 +811,9 @@ main p{
     display: flex;
     flex-direction: row;
     text-align: center;
-    margin-top: 20px;
     padding: 20px;
-    
+    justify-content: space-around;
+    flex-wrap:wrap-reverse;
 
 }
 
@@ -548,5 +828,48 @@ main p{
     flex-direction: row;
     text-align: center;
     text-wrap: wrap;
-    padding:50px;
+    padding-top: 180px;
+    height: 400px;
+    width: 600px;
 }
+/* pantalla tablet */
+@media (max-width: 768px) {
+    .info-foto {
+        flex-direction: column;  
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .foto {
+        height: 200px;
+        width: 200px;
+        align-self: center;
+    }
+
+    .info-foto p {
+        padding-top: 20px;
+        height: auto;  
+        width: 100%;  
+    }
+}
+
+/* pantalla celular */
+@media (max-width: 480px) {
+    .main-aboutus {
+        padding: 10px;
+    }
+
+    .foto {
+        height: 150px;  
+        width: 150px;
+        align-self: center;
+    }
+
+    .info-foto p {
+        padding-top: 10px;
+        font-size: 14px; 
+    }
+
+    .main-aboutus h1 {
+        font-size: 24px; }
+    }
