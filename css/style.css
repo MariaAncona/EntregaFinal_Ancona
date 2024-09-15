@@ -509,3 +509,44 @@ main p{
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+/* Diseño About us */ 
+
+.main-aboutus {
+    background-color: #f4f4f4;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500px;
+    font-style: normal;
+    color:#555;
+    height: fit-content;
+}
+
+.main-aboutus h1{
+    color:#333;
+}
+
+.info-foto{
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    
+
+}
+
+.foto{
+    height: 300px;
+    width: 300px;
+}
+
+.info-foto p{
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    text-wrap: wrap;
+    padding:50px;
+}

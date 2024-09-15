@@ -18,7 +18,7 @@ const enlaces = [
     },
     {
         link: "aboutus",
-        nombre: "Conócenos"
+        nombre: "Nosotros"
     },
 
 
