@@ -203,16 +203,18 @@
 }
 /* tamaño tablet */
 @media (max-width: 768px) {
-    .sidebar {
-        width: 80%; 
-    }
+
+.sidebar.open {
+    width: 300px; 
 }
 
+}
 /* tamaño celular */
 @media (max-width: 480px) {
-    .sidebar {
-        width: 80%;
-        padding-top: 50px;
+
+    .sidebar.open {
+        width: 250px; 
+        padding-top: 50px; 
     }
 
     .sidebar h2 {
@@ -220,7 +222,7 @@
     }
 
     #cerrarCarrito {
-        font-size: 20px; 
+        font-size: 20px;
     }
 }
 
@@ -271,7 +273,6 @@ margin-bottom: 20px;
     padding-top: 10px;
 }
 
-/* tamaño tablet */
 @media (max-width: 768px) {
     .producto-agregado {
         height: 300px; 
